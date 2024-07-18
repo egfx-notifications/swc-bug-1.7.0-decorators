@@ -1,0 +1,43 @@
+{
+	"minify": true,
+	"jsc": {
+		"parser": {
+			"syntax": "typescript",
+			"tsx": false,
+			"decorators": true,
+			"dynamicImport": false
+		},
+		"minify": {
+			"compress": {
+				"keep_classnames": true
+			},
+			"mangle": {
+				"keepFnNames": true,
+				"keepClassNames": true
+			}
+		},
+		"transform": {
+			"decoratorVersion": "2022-03",
+			"useDefineForClassFields": true
+		},
+		"loose": false,
+		"externalHelpers": false,
+		// Requires v1.2.50 or upper and requires target to be es2016 or upper.
+		"keepClassNames": true
+	},
+	"module": {
+		"type": "es6",
+		// These are defaults.
+		"strict": false,
+		"strictMode": true,
+		"lazy": false,
+		"noInterop": false
+	},
+	"env": {
+		// FIXME: swc-loader doesn't load browserslist config from .browserslistrc although it says so in the documentation
+		// https://github.com/swc-project/swc/issues/3365
+		"targets": ["Chrome >= 105", "Firefox >= 122"],
+		"mode": "usage",
+		"coreJs": "3.37"
+	}
+}
