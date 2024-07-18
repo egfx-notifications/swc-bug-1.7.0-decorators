@@ -1,0 +1,16 @@
+{
+	"name": "swc-bug-1.7.0",
+	"version": "0.0.1",
+	"description": "Minimal reproduction",
+	"private": true,
+	"author": "Florian Schwalm <Florian.Schwalm@seven.one>",
+	"devDependencies": {
+		"@swc/cli": "^0.4",
+		"@swc/core": "1.7.0",
+		"browserslist": "^4.23.0"
+	},
+	"dependencies": {
+		"core-js": "^3.26.1",
+		"lit": "^3.1.3"
+	}
+}
